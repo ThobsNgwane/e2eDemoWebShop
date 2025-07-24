@@ -14,12 +14,5 @@ test('Test E2E shopping in the Demo Workshop', async ({ page }, testInfo) => {
     await home.addProductToCart();
     const cart = new cartPage(page);
     await cart.checkoutTheProduct();
-    const checkout = new checkoutPage(page);
-    //checkout.enterTheBillingAddress();
-    //checkout.enterShippingAddress();
-    //checkout.selectShippingMethod();
-    //checkout.selectPaymentMethod();
-    //checkout.verifyPaymentInformation();
-    //checkout.confirmOrder();
 
 });

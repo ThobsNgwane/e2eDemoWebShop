@@ -19,6 +19,7 @@ export class loginPage {
   }
 
   async goto() {
+    await this.page.setViewportSize({width:1366, height:728});
     await this.page.goto(environmentConfig.baseUrl!);
   }
 
